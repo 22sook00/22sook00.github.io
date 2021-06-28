@@ -1,0 +1,87 @@
+#contact {
+  width: 100%;
+  height: 90%;
+  padding: 100px;
+  box-sizing: border-box;
+}
+#contact .liner {
+  width: 250px;
+}
+.ctcBox {
+  width: 100%;
+  margin-top: 80px;
+  border-radius: 20px;
+  padding: 30px 80px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.contact1,
+.contact2,
+.contact3 {
+  width: 300px;
+  height: 380px;
+  margin: -30px 20px 0 20px;
+  list-style-type: none;
+
+  border: 8px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(white, white),
+    linear-gradient(
+      80deg,
+      var(--color-conceptColor_magenta),
+      var(--color-conceptColor_green)
+    );
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*contact1*/
+
+.remark {
+  font-family: InkLipquid;
+  font-size: 25px;
+  margin: 10px;
+}
+/*contact2*/
+.contact2 > div {
+  text-align: left;
+}
+.contact2 > div > p {
+  font-weight: 500;
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.contact2 > div > strong {
+  font-size: 24px;
+  font-weight: 600;
+}
+.contact2 > div > a {
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+.contact2 > div > a:hover {
+  color: var(--color-darkGreyColor);
+}
+/*contact3*/
+.contact3 > button {
+  width: 70%;
+  height: 60px;
+  font-size: 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: var(--color-conceptColor_green);
+}
+.contact3 > button:hover {
+  background-color: var(--color-conceptColor_greenHover);
+  color: var(--color-darkGreyColor);
+  opacity: 0.7;
+  overflow: hidden;
+}

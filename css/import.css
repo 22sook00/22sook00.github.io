@@ -1,0 +1,44 @@
+@import url(../css/main.css);
+@import url(../css/intro.css);
+@import url(../css/aside.css);
+@import url(../css/skills.css);
+@import url(../css/portfolio.css);
+@import url(../css/ctc.css);
+@import url(../css/footer.css);
+
+/*font*/
+@font-face {
+  font-family: "InkLipquid";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*colors*/
+:root {
+  --color-whiteBackground: rgb(254, 246, 254);
+  --color-conceptColor_green: rgb(108, 215, 216);
+  --color-conceptColor_greenHover: rgb(147, 227, 229);
+  --color-conceptColor_magenta: rgb(255, 189, 245);
+  --color-lightGreyColor: rgb(211, 200, 211);
+  --color-darkGreyColor: rgb(105, 104, 104);
+}
+
+.flexBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}

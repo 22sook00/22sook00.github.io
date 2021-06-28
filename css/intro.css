@@ -1,0 +1,77 @@
+#intro {
+  width: 100%;
+  height: 100%;
+  padding: 100px;
+  box-sizing: border-box;
+  background: linear-gradient(
+    -80deg,
+    var(--color-conceptColor_magenta),
+    var(--color-conceptColor_green)
+  );
+  position: relative;
+}
+#intro > .flexBox {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-whiteBackground);
+  border-radius: 20px;
+}
+.introImgs > img {
+  width: 160px;
+  height: 220px;
+  border-radius: 10px;
+  position: absolute;
+}
+.introImg1 {
+  top: 240px;
+  left: 220px;
+}
+.introImg2 {
+  top: 280px;
+  left: 370px;
+}
+.introImg3 {
+  top: 430px;
+  left: 280px;
+}
+
+.leftLine > h2,
+.leftLine > h3,
+.leftLine > p {
+  margin-left: 40px;
+}
+
+.introContent {
+  box-sizing: border-box;
+  padding: 40px 60px;
+  position: relative;
+  left: 220px;
+}
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.subTitle {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.leftLine > p {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+.goToResume {
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: var(--color-conceptColor_green);
+}
+.goToResume:hover {
+  background-color: var(--color-conceptColor_greenHover);
+  color: var(--color-darkGreyColor);
+}

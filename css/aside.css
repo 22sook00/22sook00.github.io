@@ -1,0 +1,73 @@
+@keyframes upNdown {
+  0% {
+    margin-top: -10px;
+  }
+  100% {
+    margin-top: 5px;
+  }
+}
+@keyframes tickle {
+  0% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(10%);
+  }
+}
+
+aside {
+  font-size: 30px;
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+aside > div {
+  margin: 10px 0;
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.toggle_side {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.toggle_side:hover {
+  animation: tickle 0.3s 0s ease infinite alternate-reverse;
+}
+aside .goToSkills {
+  padding-top: 15px;
+}
+aside .goToPortfolio {
+  padding-top: 20px;
+}
+aside .goToContact {
+  padding-top: 20px;
+}
+.fa-angle-double-up::before {
+  animation: upNdown 0.7s 0s ease infinite alternate-reverse;
+}
+aside > .goToMain {
+  width: 70px;
+  height: 70px;
+  margin-top: 20px;
+  box-shadow: 3px 3px 10px rgb(193, 193, 193);
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+}
+
+aside > .goToMain:hover {
+  background-color: rgb(153, 232, 233);
+  color: whitesmoke;
+}
